@@ -1,0 +1,168 @@
+/* Font dan warna dasar */
+body {
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(to bottom, #fdf6f0, #fffaf6);
+  color: #4a2c2a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tajuk dan teks */
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  color: #7a4e2d;
+}
+
+/* Section umum */
+section {
+  padding: 80px 0;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1635710525589-edae1ba8068d?w=1600&q=80&auto=format&fit=crop") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.countdown {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Info Acara */
+.bg-acara {
+  background: linear-gradient(135deg, #c79c60, #6d2c01);
+  padding: 60px 0;
+}
+
+/* Info Acara dengan Background */
+.info-acara {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1635710525589-edae1ba8068d?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;
+  padding: 80px 0;
+  color: #fff;
+}
+
+/* ✅ Our Story Section */
+.our-story-section {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1713558014278-5b90bb28f53a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.our-story-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+  z-index: -1;
+}
+
+.our-story-section h2 {
+  font-size: 3rem;
+  color: #fce6d3;
+  font-family: "Great Vibes", cursive;
+}
+
+.our-story-section p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+/* ✅ Galeri Foto Section dengan Gradasi */
+.galeri-section {
+  background: linear-gradient(to bottom, #6b3e2e, #c79c60);
+  color: #fff;
+}
+
+/* Foto Galeri */
+img.img-fluid {
+  transition: transform 0.4s ease;
+  border: 5px solid #f4e1c1;
+  border-radius: 15px;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+/* Form */
+form .form-control {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #d9bba0;
+}
+
+form .btn {
+  background-color: #c79c60;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #a97c3c;
+  transform: scale(1.05);
+}
+
+/* Buku Tamu Section */
+.bg-dark {
+  background-color: #4a2c2a !important;
+}
+
+/* Footer */
+footer {
+  background-color: #5e3b23;
+  color: #f5eee9;
+  padding: 40px 0;
+  font-size: 15px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .countdown {
+    font-size: 1.3rem;
+  }
+
+  .our-story-section h2 {
+    font-size: 2rem;
+  }
+
+  .our-story-section p {
+    font-size: 1.1rem;
+  }
+}
